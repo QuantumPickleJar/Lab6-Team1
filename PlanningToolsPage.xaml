@@ -5,15 +5,17 @@
              x:DataType="model:BusinessLogic" 
              x:Class="Lab6_Starter.PlanningToolsPage"
              Title="Planning tools">
-  <VerticalStackLayout>
+    <VerticalStackLayout>
     <!--TODO:   
         nearby airports button
         routing strategies button
         weather (wx) button
         redemption button-->
     <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
-    <HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <!--Nearby Airports Button-->
+            <Button Text="Nearby Airpoirts" Scale="1" Margin="30"/>
       <Button Text="WX" Scale="3"/>
-    </HorizontalStackLayout>
-  </VerticalStackLayout>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>
