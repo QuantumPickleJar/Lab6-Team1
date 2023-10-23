@@ -14,8 +14,10 @@
     <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
         <HorizontalStackLayout>
             <!--Nearby Airports Button-->
-            <Button Text="Nearby Airpoirts" Scale="1" Margin="30"/>
-      <Button Text="WX" Scale="3"/>
+            <Button Text="Nearby Airpoirts" Scale="1.1" Margin="30" WidthRequest="140"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+        <Button Text="WX" Scale="1.1" Margin="30" WidthRequest="140"/>
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
