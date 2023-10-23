@@ -9,11 +9,17 @@
     <!--TODO:   
         nearby airports button
         routing strategies button
-        weather (wx) button
-        redemption button-->
-    <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
+      -->
+      <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
     <HorizontalStackLayout>
       <Button Text="WX" Scale="3"/>
+      <Button Text="Rewards" 
+              Padding="5,2"
+              Margin="180,10,0,0"
+              WidthRequest="125"
+              HeightRequest="70"
+              FontSize="Medium"
+              />
     </HorizontalStackLayout>
   </VerticalStackLayout>
 </ContentPage>
