@@ -5,11 +5,10 @@
              x:DataType="model:BusinessLogic" 
              x:Class="Lab6_Starter.PlanningToolsPage"
              Title="Planning tools">
-    <StackView>
-        <!--TODO: 
-        nearby airports button
-        routing strategies button
-        weather (wx) button
-        redemption button-->
-    </StackView>
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <!--Nearby Airports Button-->
+            <Button Text="Nearby Airpoirts" Scale="1" Margin="30"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>
