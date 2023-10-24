@@ -13,6 +13,7 @@
         <HorizontalStackLayout>
             <!--Nearby Airports Button-->
             <Button Text="Nearby Airports" Scale="1.1" Margin="30" WidthRequest="140"/>
+			<Button Text="Routing Strategies" Scale="1.1" Margin="30" WidthRequest="140"/>
         </HorizontalStackLayout>
         
         <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
