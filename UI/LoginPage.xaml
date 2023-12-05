@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Lab6_Starter.LoginPage"
+    Title="Welcome to FWAPPA!">
+
+    <Grid  RowDefinitions="10*, 4*, 4*, 1*" Padding="25">
+    
+        <Image Grid.Row="0" Source="dotnet_bot" HeightRequest="300" WidthRequest="200"/>
+
+        <VerticalStackLayout Grid.Row="1" >
+        <Entry x:Name="UserIdENT"
+            Placeholder="UserId"
+            Text="{Binding UserId}"
+            Keyboard="Default" />
+
+        <Entry x:Name="PasswordENT"
+            Placeholder="Password"
+            Text="{Binding Password}"
+            IsPassword="True"
+            Keyboard="Default" />
+        </VerticalStackLayout>
+
+        <!-- Notice the IsVisible binding, XAML supports "trutihness" (0 is false, > 0 true) -->
+        <Label Grid.Row="2" Text="{Binding ErrorMessage}" TextColor="Red"  IsVisible="{Binding ErrorMessage.Length}"/>
+       <Button Grid.Row="3" Text="Login" Command="{Binding LoginCommand}"/>
+
+
+    </Grid>
+</ContentPage>
