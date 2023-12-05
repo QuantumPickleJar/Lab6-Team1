@@ -35,11 +35,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\tools.png" ForegroundFile="Resources\AppIcon\tools.png" Color="#512BD4" />
-		<MauiIcon Include="Resources\Images\tools.png">
-		  <Color>#512BD4</Color>
-		  <ForegroundFile>Resources\AppIcon\tools.png</ForegroundFile>
-		</MauiIcon>
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -54,9 +50,6 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
-	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\tools.png" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
@@ -67,7 +60,6 @@
 
 	<ItemGroup>
 	  <None Remove="Model\" />
-	  <None Remove="Resources\Images\tools.png" />
 	  <None Remove="Resources\Images\trash.png" />
 	  <None Remove="Resources\Images\rectangle-list_48.png" />
 	</ItemGroup>
